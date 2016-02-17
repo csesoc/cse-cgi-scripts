@@ -1,0 +1,4 @@
+AuthuserFile /web/csesoc/udb/.htpasswd
+AuthType Basic
+AuthName "UDB"
+Require valid-user
