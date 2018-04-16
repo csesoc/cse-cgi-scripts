@@ -2,9 +2,6 @@
 # This script updates the mailing list subscriptions of an individual
 # Info is GET'd (lol) from the CSEsoc's website
 
-import cgitb
-cgitb.enable()
-
 import os
 import cgi
 import json
@@ -43,7 +40,7 @@ Your team now looks like this:
 
     Popen([
         'mail', '-s' ,
-        'mlalias update for {team}'.format(team=team), 
+        'mlalias update for {team}'.format(team=team),
         '{team}.head@cse.unsw.edu.au'.format(team=team)
     ], stdin=PIPE).stdin.write(message)
 
