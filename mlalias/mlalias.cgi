@@ -2,6 +2,9 @@
 # This script updates the mailing list subscriptions of an individual
 # Info is GET'd (lol) from the CSEsoc's website
 
+import cgitb
+cgitb.enable(0, format='text')
+
 import os
 import cgi
 import json
